@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "DownloadOrganizerService", "DownloadOrganizerService.pyproj", "{6A5FFD18-C514-4B6F-83E5-C71811ABCBEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A5FFD18-C514-4B6F-83E5-C71811ABCBEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A5FFD18-C514-4B6F-83E5-C71811ABCBEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {80263C08-8BA0-477B-97D4-150D4126A414}
+	EndGlobalSection
+EndGlobal
