@@ -1,5 +1,6 @@
-import os
 import shutil
+
+from pathlib import Path
 
 def get_ext_name(ext):
     """
@@ -13,43 +14,53 @@ def get_ext_name(ext):
     """
     return ext.replace(".", "").upper()
 
-def sort(root, file_entry):
+def sort_file(root : Path, file_path : Path):
     """
-    Sort files in the given directory into subdirectories based on file extensions.
-
+    Sort a file into a subdirectory based on its file extension.
+    
     Parameters:
-    directory (Path): The path to the directory with files to sort.
+    root (Path): Path to the directory of sorted file subdirectories
+    file_path (Path): Path to the file to be sorted into a subdirectory
     """
-    if file_entry.is_file():
+    if file_path.is_file() and not file_path.name.startswith('.'):
         
-        name, ext   = os.path.splitext(file_entry.name)
-        sorted_dir  = os.path.join(root, get_ext_name(ext))
+        ext = file_path.suffix
+        sorted_dir  = root / get_ext_name(ext)
 
-        if not os.path.exists(sorted_dir):
-            os.mkdir(sorted_dir)
+        # Create folder at the given path
+        sorted_dir.mkdir(exist_ok=True)
         
-        old_path = file_entry.path
-        new_path = os.path.join(sorted_dir, file_entry.name)
-       
+        # Ideal location of file after sort
+        new_path = sorted_dir / file_path.name
+        
         new_file_name = ""
         copy_number = 1
         
-        while os.path.exists(new_path):   
-            new_file_name = f"{name} ({copy_number}){ext}"
-            new_path = os.path.join(sorted_dir, new_file_name)
+        # Rename file if file w/ same name already exists in sorted location
+        while new_path.exists():   
+            new_file_name = f"{file_path.stem} ({copy_number}){ext}"
+            new_path = sorted_dir/new_file_name
             copy_number += 1
         
         try:
-            shutil.move(old_path, new_path)    
+            shutil.move(file_path, new_path)    
         except Exception as e:
-                  print(f"Could not move file {old_path} to {new_path}")
-            
-## Path to downloads folder
-folder_path = 'C:\\Users\\Workplace\\Downloads';
-
-for entry in os.scandir(folder_path):
-    if entry.is_file():
-        sort(folder_path, entry)
+                  print(f"Could not move file {file_path} to {new_path}")
+                         
+def sort_dir(dir_path):
+    """
+    Sort all files in a given directory into subdirectories corresponding to file extension
+        
+    Parameters:
+    dir_path (Path): The path to the directory with files to sort.
+    """
+    for entry in dir_path.iterdir():
+        sort_file(dir_path, entry) 
+           
+# Main Execution
+if __name__ == "__main__":
+    DOWNLOADS_PATH = Path('C:/Users/Workplace/Downloads') 
+    sort_dir(DOWNLOADS_PATH)
 
 
 
