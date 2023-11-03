@@ -1,10 +1,6 @@
 import argparse
-from ast import parse
-from re import M
 import shutil
-
 from pathlib import Path
-from xmlrpc.client import Boolean
 
 def get_ext_name(ext):
     """
@@ -62,25 +58,18 @@ def sort_dir(dir_path):
         sort_file(dir_path, entry) 
 
 def dialog(folder_path): 
-    """Prompt the user for confirmation before starting the sort"""
+    """
+    Prompt the user for confirmation before starting the sort
+    """
     choice = input(f"Are you sure you would like to sort the following directory?\nDirectory: {folder_path}\n(y/n): ").strip().lower()
     return choice == 'y';
    
 # Main Execution
 def main(folder_path: Path, no_dialog: bool):
+    # Require confirmation before sort or skip dialog if no_dialog is true
+    if no_dialog or dialog(folder_path): 
+        sort_dir(folder_path)
     
-    if no_dialog:
-        #sort_dir(folder_path)
-        print("SORT | ", folder_path)
-    else:
-        if dialog(folder_path):
-            #sort_dir(folder_path)
-            print("SORT CONFIRMED | ", folder_path)
-        else:
-            print("SORT DENIED")    
-            
-
-        
 if __name__ == "__main__":
     DOWNLOADS_PATH = Path.home() / 'Downloads'
     
