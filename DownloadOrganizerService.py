@@ -1,6 +1,11 @@
 import argparse
 import shutil
 from pathlib import Path
+import logging
+
+# Configure logging
+FORMAT = '\n%(asctime)s: %(message)s\n'
+logging.basicConfig(level=logging.INFO, format=FORMAT)
 
 def get_ext_name(ext):
     """
@@ -43,9 +48,10 @@ def sort_file(root : Path, file_path : Path):
             copy_number += 1
         
         try:
-            shutil.move(file_path, new_path)    
-        except Exception as e:
-                  print(f"Could not move file {file_path} to {new_path}")
+            shutil.move(file_path, new_path)
+            logging.info(f"Moved {file_path} to {new_path}")
+        except OSError as e:
+            logging.error(f"Could not move file {file_path} to {new_path}\n\nError: {e}")
                          
 def sort_dir(dir_path):
     """
