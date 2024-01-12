@@ -34,7 +34,7 @@ Open a command-line and `cd` to the directory containing the DownloadOrganizerSe
 
 **Command-line - Default (No arguments)**
 ```
-$ cd Directory\Containing\The\Script\
+$ cd path\to\the\python\script\
 ```
 
 Running the Script (No Arguments)
