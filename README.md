@@ -19,13 +19,14 @@ prior to executing the script.
 Getting Started
 ======================
 
-No Arguments
----------------------
+The default useage for the script is to sort the DOWNLOADS directory for a logged in user
+operating on a Windows machine. Using the script without parameters will result in the user 
+being asked if they are sure they would like to sort the downloads folder.
 
-The default useage for the script is to sort the current user's downloads folder on a 
-Windows machine. Using the script without parameters will result in the user being asked 
-if they are sure they would like to sort the downloads folder.
+The confirmation dialog as well as the path being sorted can both be changed via the program's
+command-line arguments as detailed in **Path Argument (-p, --path)** and **No Dialog (-nd, --no_dialog)**.
 
+**Default (No arguments)**
 ```
 $ python DownloadOrganizerService.py
 ```
@@ -33,15 +34,17 @@ $ python DownloadOrganizerService.py
 Path Argument (-p, --path)
 ---------------------
 
+Using the path argument, the user is able to change the path where sorting occurs when
+the script is executed.
+
 **Path Arguments**
 ```
 -p, --path
 ```
 
-Using the path argument, the user is able to change the path where sorting occurs when
-the script is executed. See example for usage:
+See example for usage:
 
-Path: C:\Users\developer\Documents\example
+`Path: C:\Users\developer\Documents\example`
 
 **Command-line**
 ```
@@ -76,6 +79,11 @@ the user will have a chance to fix it before sorting the directory and possibly 
 For automation purposes, the `no dialog` argument is provided so that a user
 could in theory run the script periodically via some method without having the
 confirmation dialog being prompted for each execution.
+
+**No Dialog Arguments**
+```
+-nd, --no_dialog
+```
 
 **Command-line**
 ```
