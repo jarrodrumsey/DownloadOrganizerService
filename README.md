@@ -23,7 +23,8 @@ Install
 To use the script, download the DownloadOrganizerService.py file from the repo and place it somewhere on your machine.
 You do not need any of the other files in this repository. Ensure that you have Python 3 installed on your machine as well.
 
-**Recommendation**: *You should move the script to a directory **other than** the directory that you wish to sort.*
+**Recommendation**: *You should move the script to a directory **other than** the directory that you wish to sort.* Else you'll 
+need to find it again in a PY/ folder in the sorted directory.
 
 -> see https://www.python.org/about/gettingstarted/ for help with Python.
 
