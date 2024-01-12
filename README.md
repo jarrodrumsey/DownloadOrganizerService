@@ -5,8 +5,7 @@ into folders corresponding to the extenstions of each file found in that directo
 (Windows 11)
 
 The script only organizes top-level files in the directory.
-I.e. sub-directories and files within these sub-directories of the given directory 
-are ignored.
+(sub-directories and files within the sub-directories are ignored.)
 
 **Disclaimer #1**: The script was only tested on machines running Windows OS.
 Compatibility with other major operating systems is not guaranteed.
