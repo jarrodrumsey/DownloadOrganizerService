@@ -18,6 +18,27 @@ prior to executing the script.
 Getting Started
 ======================
 
+Install
+---------------------
+To use the script, download the DownloadOrganizerService.py file from the repo and place it somewhere on your machine.
+You do not need any of the other files in this repository. Ensure that you have Python 3 installed on your machine as well.
+
+**Recommendation**: *You should move the script to a directory **other than** the directory that you wish to sort.*
+
+-> see https://www.python.org/about/gettingstarted/ for help with Python.
+
+Locating the Script
+---------------------
+Open a command-line and `cd` to the directory containing the DownloadOrganizerService.py file.
+
+**Command-line - Default (No arguments)**
+```
+$ cd Downloads
+```
+
+Running the Script (No Arguments)
+---------------------
+
 The default usage for the script is to sort the DOWNLOADS directory for a logged in user
 operating on a Windows machine. Using the script without parameters will result in the user 
 being asked if they are sure they would like to sort the downloads folder.
