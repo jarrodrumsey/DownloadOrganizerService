@@ -22,10 +22,11 @@ The default usage for the script is to sort the DOWNLOADS directory for a logged
 operating on a Windows machine. Using the script without parameters will result in the user 
 being asked if they are sure they would like to sort the downloads folder.
 
-The confirmation dialog as well as the path being sorted can both be changed via the program's
+**Note**: The existence of the confirmation dialog as well as the path to the directory being sorted can both be changed via the program's
 command-line arguments as detailed in the **Path Argument (-p, --path)** and **No Dialog (-nd, --no_dialog)** sections.
 
-**Default (No arguments)**
+
+**Command-line - Default (No arguments)**
 ```
 $ python DownloadOrganizerService.py
 ```
@@ -45,7 +46,7 @@ See example for usage:
 
 `Path: C:\Users\developer\Documents\example`
 
-**Command-line**
+**Command-line - Using Path Argument**
 ```
 $ python DownloadOrganizerService.py -p C:\Users\developer\Documents\example
 ```
@@ -84,7 +85,7 @@ confirmation dialog being prompted for each execution.
 -nd, --no_dialog
 ```
 
-**Command-line**
+**Command-line - Using No Dialog Argument**
 ```
 $ python DownloadOrganizerService.py -nd
 ```
