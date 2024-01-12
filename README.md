@@ -34,7 +34,7 @@ Open a command-line and `cd` to the directory containing the DownloadOrganizerSe
 
 **Command-line - Default (No arguments)**
 ```
-$ cd Downloads
+$ cd Directory\Containing\The\Script\
 ```
 
 Running the Script (No Arguments)
