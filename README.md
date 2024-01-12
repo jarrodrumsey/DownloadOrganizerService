@@ -24,7 +24,7 @@ operating on a Windows machine. Using the script without parameters will result 
 being asked if they are sure they would like to sort the downloads folder.
 
 The confirmation dialog as well as the path being sorted can both be changed via the program's
-command-line arguments as detailed in **Path Argument (-p, --path)** and **No Dialog (-nd, --no_dialog)**.
+command-line arguments as detailed in the **Path Argument (-p, --path)** and **No Dialog (-nd, --no_dialog)** sections.
 
 **Default (No arguments)**
 ```
