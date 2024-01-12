@@ -12,7 +12,7 @@ are ignored.
 Compatibility with other major operating systems is not guaranteed.
 Use at your own risk.
 
-**Disclaimer #2:**: It is the user's responsibility to ensure that sorting any directory,
+**Disclaimer #2**: It is the user's responsibility to ensure that sorting any directory,
 the default DOWNLOADS directory or otherwise, will not break something on their machine 
 prior to executing the script.
 
