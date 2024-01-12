@@ -99,7 +99,7 @@ This ensures that the user has a second change to review the currently set path.
 the user will have a chance to fix it before sorting the directory and possibly messing something up.
 
 For automation purposes, the `--no_dialog` flag is provided to turn of the confirmation dialog 
-so that a user could in theory run the script periodically via some method without having the
+so that a user could in theory run the script periodically via a service or some other method without having the
 confirmation dialog being prompted for each execution.
 
 **No Dialog Arguments**
