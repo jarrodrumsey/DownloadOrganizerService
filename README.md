@@ -15,6 +15,14 @@ Use at your own risk.
 the default DOWNLOADS directory or otherwise, will not break something on their machine 
 prior to executing the script.
 
+**Note**: While there is currently no plans to add a run.bat file to the repo, one could be made like such:
+**run.bat**:
+```
+@echo off
+python DownloadOrganizerService.py -YOUR_PARAMETERS_HERE
+pause
+```
+
 Getting Started
 ======================
 
@@ -111,6 +119,4 @@ confirmation dialog being prompted for each execution.
 ```
 $ python DownloadOrganizerService.py -nd
 ```
-
-
 
