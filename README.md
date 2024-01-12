@@ -19,7 +19,7 @@ prior to executing the script.
 Getting Started
 ======================
 
-The default useage for the script is to sort the DOWNLOADS directory for a logged in user
+The default usage for the script is to sort the DOWNLOADS directory for a logged in user
 operating on a Windows machine. Using the script without parameters will result in the user 
 being asked if they are sure they would like to sort the downloads folder.
 
