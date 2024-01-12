@@ -32,7 +32,7 @@ Locating the Script
 ---------------------
 Open a command-line and `cd` to the directory containing the DownloadOrganizerService.py file.
 
-**Command-line - Default (No arguments)**
+**Command-line - Locating Script**
 ```
 $ cd path\to\the\python\script\
 ```
