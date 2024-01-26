@@ -103,7 +103,7 @@ For safety purposes, the script by default will prompt the user with a dialog to
 that they are sure that they want to sort whatever the current path is set as (either the 
 default DOWNLOADS path or what is set in the path argument) after being executed.
 
-This ensures that the user has a second change to review the currently set path. And if the incorrect path is selected, 
+This ensures that the user has a second chance to review the currently set path. And if the incorrect path is selected, 
 the user will have a chance to fix it before sorting the directory and possibly messing something up.
 
 For automation purposes, the `--no_dialog` flag is provided to turn off the confirmation dialog 
