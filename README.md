@@ -17,7 +17,7 @@ prior to executing the script.
 
 **Note**: While there is currently no plans to add a run.bat file to the repo, one could be made like such:
 **run.bat**:
-```
+```bat
 @echo off
 python DownloadOrganizerService.py -YOUR_PARAMETERS_HERE
 pause
@@ -41,7 +41,7 @@ Locating the Script
 Open a command-line and `cd` to the directory containing the DownloadOrganizerService.py file.
 
 **Command-line - Locating the Script**
-```
+```console
 $ cd path\to\the\python\script\
 ```
 
@@ -57,7 +57,7 @@ command-line arguments as detailed in the **Path Argument (-p, --path)** and **N
 
 
 **Command-line - Default (No arguments)**
-```
+```console
 $ python DownloadOrganizerService.py
 ```
 
@@ -68,7 +68,7 @@ Using the `--path` argument, the user is able to change the path where sorting o
 the script is executed.
 
 **Path Arguments**
-```
+```console
 -p, --path
 ```
 
@@ -77,7 +77,7 @@ See example for usage:
 `Path: C:\Users\developer\Documents\example`
 
 **Command-line - Using Path Argument**
-```
+```console
 $ python DownloadOrganizerService.py -p C:\Users\developer\Documents\example
 ```
 
@@ -116,7 +116,7 @@ confirmation dialog being prompted for each execution.
 ```
 
 **Command-line - Using No Dialog Argument**
-```
+```console
 $ python DownloadOrganizerService.py -nd
 ```
 
