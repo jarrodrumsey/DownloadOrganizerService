@@ -111,7 +111,7 @@ so that a user could in theory run the script periodically via a service or some
 confirmation dialog being prompted for each execution.
 
 **No Dialog Arguments**
-```
+```console
 -nd, --no_dialog
 ```
 
